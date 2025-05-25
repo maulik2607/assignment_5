@@ -1,0 +1,196 @@
+/* Base Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4vw;
+  background-color: #f8f9fa;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #e67e22;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e67e22;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10vh 5vw;
+  background: linear-gradient(to right, #f5f5f5, #ffe5d9);
+}
+
+.hero-content h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cf711f;
+}
+
+/* Sections */
+.section {
+  padding: 8vh 5vw;
+  text-align: center;
+}
+
+.features .feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #fff3e0;
+  padding: 2rem;
+  border-radius: 1rem;
+  flex: 1 1 25rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* How it Works */
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.step {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  flex: 1 1 20rem;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+  font-style: italic;
+  color: #555;
+  max-width: 60rem;
+  margin: 2rem auto;
+}
+
+.testimonials cite {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.contact-form input {
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #cf711f;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #fafafa;
+  font-size: 1.4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .features .feature-cards,
+  .steps {
+    flex-direction: column;
+  }
+}
